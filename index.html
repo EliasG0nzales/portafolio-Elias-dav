@@ -1,129 +1,662 @@
 <!DOCTYPE html>
-   <html lang="en">
+<html lang="es">
    <head>
       <meta charset="UTF-8">
-      <meta name="description" content="Experienced professional offering high-quality digital and creative services. Discover my portfolio and work with me to turn your ideas into impactful results.">
+      <meta name="description" content="Portafolio de Elias Gonzales Jenhua: ciencia de datos, inteligencia artificial, diseno UI y desarrollo frontend.">
       <meta name="robots" content="index, follow">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-      <!--=============== FAVICON ===============-->
       <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
-
-      <!--=============== REMIXICONS - Insert link for icons ===============-->
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css">
-
-      <!--=============== SWIPER CSS - Insert link for swiperjs ===============-->
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
-
-      <!--=============== CSS ===============-->
       <link rel="stylesheet" href="assets/css/styles.css">
 
-      <title>Responsive portfolio website | Bedimcode</title>
+      <title>Portafolio | Elias Gonzales Jenhua</title>
    </head>
    <body>
-      <!--==================== HEADER & NAV ====================-->
       <header class="header" id="header">
          <nav class="nav container">
-            <a href="/index.html" class="nav__logo">Bianca</a>
+            <a href="#home" class="nav__logo">ELIAS.DEV</a>
 
             <div class="nav__menu" id="nav-menu">
                <ul class="nav__list">
-                  <li>
-                     <a href="#home" class="nav__link active-link">Home</a>
-                  </li>
-
-                  <li>
-                     <a href="#work" class="nav__link">Works</a>
-                  </li>
-
-                  <li>
-                     <a href="#service" class="nav__link">My Services</a>
-                  </li>
-
-                  <li>
-                     <a href="#skills" class="nav__link">Skills</a>
-                  </li>
-
-                  <li>
-                     <a href="#contact" class="nav__contact">Contact me</a>
-                  </li>
+                  <li><a href="#home" class="nav__link active-link">Inicio</a></li>
+                  <li><a href="#work" class="nav__link">Proyectos</a></li>
+                  <li><a href="#service" class="nav__link">Servicios</a></li>
+                  <li><a href="#skills" class="nav__link">Habilidades</a></li>
+                  <li><a href="#contact" class="nav__contact">Contacto</a></li>
                </ul>
 
-               <!-- Close -->
-               <button class="nav__close" id="nav-close" aria-label="Close menu">
+               <button class="nav__close" id="nav-close" aria-label="Cerrar menu">
                   <i class="ri-close-large-line"></i>
                </button>
             </div>
 
-            <!-- Toggle -->
-            <button class="nav__toggle" id="nav-toggle" aria-label="Toggle menu">
+            <button class="nav__toggle" id="nav-toggle" aria-label="Abrir menu">
                <i class="ri-menu-line"></i>
             </button>
          </nav>
       </header>
 
-      <!--==================== MAIN ====================-->
       <main class="main">
-         <!-- CUSTOM CURSOR -->
-
-         
-         <!--==================== HOME SECTION ====================-->
          <section class="home section" id="home">
-            
+            <div class="home__container container grid">
+               <div class="home__data">
+                  <p class="home__subtitle">Hola, soy Elias Gonzales Jenhua · Vivo en Peru, Lima, San Juan de Lurigancho</p>
+                  <h1 class="home__title">
+                     Data Science & <br>
+                     UI Designer <br>
+                     <span id="home-typed">Inteligencia Artificial</span>
+                  </h1>
+                  <p class="home__description">Analizo datos, diseno interfaces y construyo soluciones digitales que resuelven problemas reales.</p>
+               </div>
+
+               <div class="home__image">
+                  <span class="blob-big home__blob-1"></span>
+                  <span class="blob-small home__blob-2"></span>
+                  <img src="assets/img/home-descargar.png" alt="Foto de Elias Gonzales Jenhua" class="home__img">
+                  <a href="#work" class="home__circle" aria-label="Ver mi trabajo">
+                     <span class="home__text">VER - MI - TRABAJO -</span>
+                     <i class="ri-arrow-down-line"></i>
+                  </a>
+               </div>
+            </div>
          </section>
 
-         <!--==================== ABOUT SECTION ====================-->
          <section class="about section">
-            
+            <div class="about__container container grid">
+               <h2 class="about__title">
+                  Soy Elias, estudiante de 24 anos apasionado por la
+                  <span>tecnologia</span>, el <span>diseno</span> y los datos.
+               </h2>
+
+               <div class="about__data">
+                  <p class="about__description">
+                     Me especializo en Ciencia de Datos e Inteligencia Artificial, pero tambien disfruto crear interfaces web modernas usando HTML, CSS, React y Figma. Me gusta combinar el analisis de datos con el diseno visual para construir soluciones completas, funcionales y atractivas. Soy disciplinado, curioso y siempre en busqueda de nuevos retos tecnologicos.
+                  </p>
+                  <a href="#contact" class="button about__button">
+                     Contactame <i class="ri-arrow-right-up-line"></i>
+                  </a>
+               </div>
+            </div>
          </section>
 
-         <!--==================== WORK SECTION ====================-->
          <section class="work section" id="work">
-            
+            <h2 class="section__title">Mis <span>Proyectos</span></h2>
+            <p class="work__intro container">
+               Estos son mis repositorios publicos subidos a GitHub, integrados directamente en mi portafolio para que puedan revisar codigo, demos y documentacion.
+               <a href="https://github.com/EliasG0nzales" target="_blank" rel="noreferrer">
+                  github.com/EliasG0nzales <i class="ri-github-line"></i>
+               </a>
+            </p>
+
+            <div class="work__container container grid">
+               <article class="work__card">
+                  <a href="https://github.com/EliasG0nzales/Sistema-de-Protecci-n-contra-Intrusiones-y-Ataques-DoS" class="work__link" target="_blank" rel="noreferrer" aria-label="Abrir Sistema de Proteccion contra Intrusiones y Ataques DoS en GitHub">
+                     <img src="assets/img/Sistema%20de%20Proteccion%20contra%20Intrusiones%20y%20Ataques%20DoS.jpeg" alt="Sistema de Proteccion contra Intrusiones y Ataques DoS" class="work__img">
+                     <i class="ri-arrow-right-up-line"></i>
+                  </a>
+                  <span class="work__number">01</span>
+                  <h3 class="work__name">Sistema de Proteccion contra Intrusiones y Ataques DoS</h3>
+                  <p class="work__description">Proyecto de seguridad orientado a proteccion contra intrusiones y ataques de denegacion de servicio.</p>
+                  <div class="work__actions">
+                     <a href="https://github.com/EliasG0nzales/Sistema-de-Protecci-n-contra-Intrusiones-y-Ataques-DoS" target="_blank" rel="noreferrer">
+                        <i class="ri-github-line"></i> Codigo
+                     </a>
+                     <span>Seguridad</span>
+                  </div>
+               </article>
+
+               <article class="work__card">
+                  <a href="https://github.com/EliasG0nzales/HT08-Acceso-al-Dashboard" class="work__link" target="_blank" rel="noreferrer" aria-label="Abrir HT08 Acceso al Dashboard en GitHub">
+                     <img src="assets/img/HT08%20Acceso%20al%20Dashboard.png" alt="HT08 Acceso al Dashboard" class="work__img">
+                     <i class="ri-arrow-right-up-line"></i>
+                  </a>
+                  <span class="work__number">02</span>
+                  <h3 class="work__name">HT08 Acceso al Dashboard</h3>
+                  <p class="work__description">Pagina web para acceso a dashboard, desarrollada con HTML y desplegada en Vercel.</p>
+                  <div class="work__actions">
+                     <a href="https://github.com/EliasG0nzales/HT08-Acceso-al-Dashboard" target="_blank" rel="noreferrer">
+                        <i class="ri-github-line"></i> Codigo
+                     </a>
+                     <a href="https://tarea6-six.vercel.app" target="_blank" rel="noreferrer">
+                        <i class="ri-external-link-line"></i> Demo
+                     </a>
+                     <span>HTML</span>
+                  </div>
+               </article>
+
+               <article class="work__card">
+                  <a href="https://github.com/EliasG0nzales/HT08-pagina-web-del-modelo-de-trabajo" class="work__link" target="_blank" rel="noreferrer" aria-label="Abrir HT08 Pagina Web del Modelo de Trabajo en GitHub">
+                     <img src="assets/img/Pagina%20Web%20del%20Modelo%20de%20Trabajo.jpg" alt="HT08 Pagina Web del Modelo de Trabajo" class="work__img">
+                     <i class="ri-arrow-right-up-line"></i>
+                  </a>
+                  <span class="work__number">03</span>
+                  <h3 class="work__name">HT08 Pagina Web del Modelo de Trabajo</h3>
+                  <p class="work__description">Sitio web academico sobre modelo de trabajo, maquetado con CSS y publicado en Vercel.</p>
+                  <div class="work__actions">
+                     <a href="https://github.com/EliasG0nzales/HT08-pagina-web-del-modelo-de-trabajo" target="_blank" rel="noreferrer">
+                        <i class="ri-github-line"></i> Codigo
+                     </a>
+                     <a href="https://ht08-pagina-web-modelo-trabajo.vercel.app" target="_blank" rel="noreferrer">
+                        <i class="ri-external-link-line"></i> Demo
+                     </a>
+                     <span>CSS</span>
+                  </div>
+               </article>
+
+               <article class="work__card">
+                  <a href="https://github.com/EliasG0nzales/Tarea5-Fortigate" class="work__link" target="_blank" rel="noreferrer" aria-label="Abrir Tarea5 Fortigate en GitHub">
+                     <img src="assets/img/fortigate.png" alt="Tarea5 Fortigate" class="work__img">
+                     <i class="ri-arrow-right-up-line"></i>
+                  </a>
+                  <span class="work__number">04</span>
+                  <h3 class="work__name">Tarea5 Fortigate</h3>
+                  <p class="work__description">Proyecto web relacionado con Fortigate y seguridad de redes, desarrollado en HTML.</p>
+                  <div class="work__actions">
+                     <a href="https://github.com/EliasG0nzales/Tarea5-Fortigate" target="_blank" rel="noreferrer">
+                        <i class="ri-github-line"></i> Codigo
+                     </a>
+                     <span>HTML</span>
+                  </div>
+               </article>
+
+               <article class="work__card">
+                  <a href="https://github.com/EliasG0nzales/tarea-5-Fortigate-sistema" class="work__link" target="_blank" rel="noreferrer" aria-label="Abrir Tarea 5 Fortigate Sistema en GitHub">
+                     <img src="assets/img/fortigate%20sistema.png" alt="Tarea 5 Fortigate Sistema" class="work__img">
+                     <i class="ri-arrow-right-up-line"></i>
+                  </a>
+                  <span class="work__number">05</span>
+                  <h3 class="work__name">Tarea 5 Fortigate Sistema</h3>
+                  <p class="work__description">Sistema web academico enfocado en Fortigate y configuraciones de seguridad.</p>
+                  <div class="work__actions">
+                     <a href="https://github.com/EliasG0nzales/tarea-5-Fortigate-sistema" target="_blank" rel="noreferrer">
+                        <i class="ri-github-line"></i> Codigo
+                     </a>
+                     <span>HTML</span>
+                  </div>
+               </article>
+
+               <article class="work__card">
+                  <a href="https://github.com/EliasG0nzales/reporte" class="work__link" target="_blank" rel="noreferrer" aria-label="Abrir Reporte en GitHub">
+                     <img src="assets/img/reporte.jpeg" alt="Reporte" class="work__img">
+                     <i class="ri-arrow-right-up-line"></i>
+                  </a>
+                  <span class="work__number">06</span>
+                  <h3 class="work__name">Reporte</h3>
+                  <p class="work__description">Proyecto de reporte web publicado en Vercel para visualizar informacion de forma clara.</p>
+                  <div class="work__actions">
+                     <a href="https://github.com/EliasG0nzales/reporte" target="_blank" rel="noreferrer">
+                        <i class="ri-github-line"></i> Codigo
+                     </a>
+                     <a href="https://reportenewreport.vercel.app" target="_blank" rel="noreferrer">
+                        <i class="ri-external-link-line"></i> Demo
+                     </a>
+                     <span>HTML</span>
+                  </div>
+               </article>
+
+               <article class="work__card">
+                  <a href="https://github.com/EliasG0nzales/Cisco" class="work__link" target="_blank" rel="noreferrer" aria-label="Abrir Cisco en GitHub">
+                     <img src="assets/img/cisco.jpeg" alt="Cisco" class="work__img">
+                     <i class="ri-arrow-right-up-line"></i>
+                  </a>
+                  <span class="work__number">07</span>
+                  <h3 class="work__name">Cisco</h3>
+                  <p class="work__description">Proyecto web relacionado con Cisco y redes, desarrollado en HTML y desplegado en Vercel.</p>
+                  <div class="work__actions">
+                     <a href="https://github.com/EliasG0nzales/Cisco" target="_blank" rel="noreferrer">
+                        <i class="ri-github-line"></i> Codigo
+                     </a>
+                     <a href="https://cisco-psi.vercel.app" target="_blank" rel="noreferrer">
+                        <i class="ri-external-link-line"></i> Demo
+                     </a>
+                     <span>HTML</span>
+                  </div>
+               </article>
+
+               <article class="work__card">
+                  <a href="https://github.com/EliasG0nzales/facturacion-frontend" class="work__link" target="_blank" rel="noreferrer" aria-label="Abrir Facturacion Frontend en GitHub">
+                     <img src="assets/img/Facturacion%20Frontend.png" alt="Facturacion Frontend" class="work__img">
+                     <i class="ri-arrow-right-up-line"></i>
+                  </a>
+                  <span class="work__number">08</span>
+                  <h3 class="work__name">Facturacion Frontend</h3>
+                  <p class="work__description">Interfaz frontend de facturacion construida con TypeScript para gestionar procesos comerciales.</p>
+                  <div class="work__actions">
+                     <a href="https://github.com/EliasG0nzales/facturacion-frontend" target="_blank" rel="noreferrer">
+                        <i class="ri-github-line"></i> Codigo
+                     </a>
+                     <span>TypeScript</span>
+                  </div>
+               </article>
+
+               <article class="work__card">
+                  <a href="https://github.com/EliasG0nzales/Sistema-de-Facturacion-V-1Frontend" class="work__link" target="_blank" rel="noreferrer" aria-label="Abrir Sistema de Facturacion V1 Frontend en GitHub">
+                     <img src="assets/img/Sistema%20de%20Facturacion%20V1%20Frontend.jpeg" alt="Sistema de Facturacion V1 Frontend" class="work__img">
+                     <i class="ri-arrow-right-up-line"></i>
+                  </a>
+                  <span class="work__number">09</span>
+                  <h3 class="work__name">Sistema de Facturacion V1 Frontend</h3>
+                  <p class="work__description">Frontend de sistema de facturacion version 1, desarrollado con TypeScript.</p>
+                  <div class="work__actions">
+                     <a href="https://github.com/EliasG0nzales/Sistema-de-Facturacion-V-1Frontend" target="_blank" rel="noreferrer">
+                        <i class="ri-github-line"></i> Codigo
+                     </a>
+                     <span>TypeScript</span>
+                  </div>
+               </article>
+
+               <article class="work__card">
+                  <a href="https://github.com/EliasG0nzales/Eagle_Gamer_PERU" class="work__link" target="_blank" rel="noreferrer" aria-label="Abrir Eagle Gamer Peru en GitHub">
+                     <img src="assets/img/Eagle%20Gamer%20PERU.png" alt="Eagle Gamer Peru" class="work__img">
+                     <i class="ri-arrow-right-up-line"></i>
+                  </a>
+                  <span class="work__number">10</span>
+                  <h3 class="work__name">Eagle Gamer PERU</h3>
+                  <p class="work__description">Proyecto JavaScript para una experiencia o sistema relacionado con gaming.</p>
+                  <div class="work__actions">
+                     <a href="https://github.com/EliasG0nzales/Eagle_Gamer_PERU" target="_blank" rel="noreferrer">
+                        <i class="ri-github-line"></i> Codigo
+                     </a>
+                     <span>JavaScript</span>
+                  </div>
+               </article>
+
+               <article class="work__card">
+                  <a href="https://github.com/EliasG0nzales/eagle-gaming-system" class="work__link" target="_blank" rel="noreferrer" aria-label="Abrir Eagle Gaming System en GitHub">
+                     <img src="assets/img/Eagle%20Gaming%20System.png" alt="Eagle Gaming System" class="work__img">
+                     <i class="ri-arrow-right-up-line"></i>
+                  </a>
+                  <span class="work__number">11</span>
+                  <h3 class="work__name">Eagle Gaming System</h3>
+                  <p class="work__description">Sistema web desarrollado con JavaScript para gestion o experiencia gaming.</p>
+                  <div class="work__actions">
+                     <a href="https://github.com/EliasG0nzales/eagle-gaming-system" target="_blank" rel="noreferrer">
+                        <i class="ri-github-line"></i> Codigo
+                     </a>
+                     <span>JavaScript</span>
+                  </div>
+               </article>
+
+               <article class="work__card">
+                  <a href="https://github.com/EliasG0nzales/Facturacion" class="work__link" target="_blank" rel="noreferrer" aria-label="Abrir Facturacion en GitHub">
+                     <img src="assets/img/Facturacion.png" alt="Facturacion" class="work__img">
+                     <i class="ri-arrow-right-up-line"></i>
+                  </a>
+                  <span class="work__number">12</span>
+                  <h3 class="work__name">Facturacion</h3>
+                  <p class="work__description">Aplicacion de facturacion desarrollada con JavaScript para operaciones de gestion comercial.</p>
+                  <div class="work__actions">
+                     <a href="https://github.com/EliasG0nzales/Facturacion" target="_blank" rel="noreferrer">
+                        <i class="ri-github-line"></i> Codigo
+                     </a>
+                     <span>JavaScript</span>
+                  </div>
+               </article>
+
+               <article class="work__card">
+                  <a href="https://github.com/EliasG0nzales/NETORA" class="work__link" target="_blank" rel="noreferrer" aria-label="Abrir NETORA en GitHub">
+                     <img src="assets/img/NETORA.jpeg" alt="NETORA" class="work__img">
+                     <i class="ri-arrow-right-up-line"></i>
+                  </a>
+                  <span class="work__number">13</span>
+                  <h3 class="work__name">NETORA</h3>
+                  <p class="work__description">Proyecto web en HTML con enfoque visual y estructura de sitio informativo.</p>
+                  <div class="work__actions">
+                     <a href="https://github.com/EliasG0nzales/NETORA" target="_blank" rel="noreferrer">
+                        <i class="ri-github-line"></i> Codigo
+                     </a>
+                     <span>HTML</span>
+                  </div>
+               </article>
+
+               <article class="work__card">
+                  <a href="https://github.com/EliasG0nzales/CRM-CLEAN-REACT" class="work__link" target="_blank" rel="noreferrer" aria-label="Abrir CRM Clean React en GitHub">
+                     <img src="assets/img/CRM%20Clean%20React.jpeg" alt="CRM Clean React" class="work__img">
+                     <i class="ri-arrow-right-up-line"></i>
+                  </a>
+                  <span class="work__number">14</span>
+                  <h3 class="work__name">CRM Clean React</h3>
+                  <p class="work__description">CRM desarrollado con JavaScript y React, orientado a gestion clara de clientes.</p>
+                  <div class="work__actions">
+                     <a href="https://github.com/EliasG0nzales/CRM-CLEAN-REACT" target="_blank" rel="noreferrer">
+                        <i class="ri-github-line"></i> Codigo
+                     </a>
+                     <span>JavaScript</span>
+                  </div>
+               </article>
+
+               <article class="work__card">
+                  <a href="https://github.com/EliasG0nzales/Proyecto-04-BlogCliente" class="work__link" target="_blank" rel="noreferrer" aria-label="Abrir Proyecto 04 Blog Cliente en GitHub">
+                     <img src="assets/img/Proyecto%2004%20Blog%20Cliente.jpg" alt="Proyecto 04 Blog Cliente" class="work__img">
+                     <i class="ri-arrow-right-up-line"></i>
+                  </a>
+                  <span class="work__number">15</span>
+                  <h3 class="work__name">Proyecto 04 Blog Cliente</h3>
+                  <p class="work__description">Proyecto de blog para cliente desarrollado con TypeScript.</p>
+                  <div class="work__actions">
+                     <a href="https://github.com/EliasG0nzales/Proyecto-04-BlogCliente" target="_blank" rel="noreferrer">
+                        <i class="ri-github-line"></i> Codigo
+                     </a>
+                     <span>TypeScript</span>
+                  </div>
+               </article>
+
+               <article class="work__card">
+                  <a href="https://github.com/EliasG0nzales/MULTIAGENTE" class="work__link" target="_blank" rel="noreferrer" aria-label="Abrir MULTIAGENTE en GitHub">
+                     <img src="assets/img/MULTIAGENTE.jpg" alt="MULTIAGENTE" class="work__img">
+                     <i class="ri-arrow-right-up-line"></i>
+                  </a>
+                  <span class="work__number">16</span>
+                  <h3 class="work__name">MULTIAGENTE</h3>
+                  <p class="work__description">Proyecto multiagente publicado en Vercel, relacionado con automatizacion o sistemas inteligentes.</p>
+                  <div class="work__actions">
+                     <a href="https://github.com/EliasG0nzales/MULTIAGENTE" target="_blank" rel="noreferrer">
+                        <i class="ri-github-line"></i> Codigo
+                     </a>
+                     <a href="https://multiagente-gules.vercel.app" target="_blank" rel="noreferrer">
+                        <i class="ri-external-link-line"></i> Demo
+                     </a>
+                     <span>Proyecto</span>
+                  </div>
+               </article>
+
+               <article class="work__card">
+                  <a href="https://github.com/EliasG0nzales/microservices-lab" class="work__link" target="_blank" rel="noreferrer" aria-label="Abrir Microservices Lab en GitHub">
+                     <img src="assets/img/Microservices%20Lab.png" alt="Microservices Lab" class="work__img">
+                     <i class="ri-arrow-right-up-line"></i>
+                  </a>
+                  <span class="work__number">17</span>
+                  <h3 class="work__name">Microservices Lab</h3>
+                  <p class="work__description">Laboratorio de microservicios con despliegue publico en Vercel.</p>
+                  <div class="work__actions">
+                     <a href="https://github.com/EliasG0nzales/microservices-lab" target="_blank" rel="noreferrer">
+                        <i class="ri-github-line"></i> Codigo
+                     </a>
+                     <a href="https://microservices-lab.vercel.app" target="_blank" rel="noreferrer">
+                        <i class="ri-external-link-line"></i> Demo
+                     </a>
+                     <span>Microservicios</span>
+                  </div>
+               </article>
+
+               <article class="work__card">
+                  <a href="https://github.com/EliasG0nzales/Mi-Biografia" class="work__link" target="_blank" rel="noreferrer" aria-label="Abrir Mi Biografia en GitHub">
+                     <img src="assets/img/Mi%20Biografia.jpeg" alt="Mi Biografia" class="work__img">
+                     <i class="ri-arrow-right-up-line"></i>
+                  </a>
+                  <span class="work__number">18</span>
+                  <h3 class="work__name">Mi Biografia</h3>
+                  <p class="work__description">Proyecto personal de biografia para presentar informacion y practica web.</p>
+                  <div class="work__actions">
+                     <a href="https://github.com/EliasG0nzales/Mi-Biografia" target="_blank" rel="noreferrer">
+                        <i class="ri-github-line"></i> Codigo
+                     </a>
+                     <span>Personal</span>
+                  </div>
+               </article>
+
+               <article class="work__card">
+                  <a href="https://github.com/EliasG0nzales/Control_de_Estudiantes" class="work__link" target="_blank" rel="noreferrer" aria-label="Abrir Control de Estudiantes en GitHub">
+                     <img src="assets/img/Control%20de%20Estudiantes.jpg" alt="Control de Estudiantes" class="work__img">
+                     <i class="ri-arrow-right-up-line"></i>
+                  </a>
+                  <span class="work__number">19</span>
+                  <h3 class="work__name">Control de Estudiantes</h3>
+                  <p class="work__description">Sistema para gestionar informacion de estudiantes y practicar logica de control.</p>
+                  <div class="work__actions">
+                     <a href="https://github.com/EliasG0nzales/Control_de_Estudiantes" target="_blank" rel="noreferrer">
+                        <i class="ri-github-line"></i> Codigo
+                     </a>
+                     <span>Sistema</span>
+                  </div>
+               </article>
+
+               <article class="work__card">
+                  <a href="https://github.com/EliasG0nzales/inventario-producto" class="work__link" target="_blank" rel="noreferrer" aria-label="Abrir Inventario Producto en GitHub">
+                     <img src="assets/img/Inventario%20Producto.jpg" alt="Inventario Producto" class="work__img">
+                     <i class="ri-arrow-right-up-line"></i>
+                  </a>
+                  <span class="work__number">20</span>
+                  <h3 class="work__name">Inventario Producto</h3>
+                  <p class="work__description">Sistema de registro y control de bienes, mercancias y stock para optimizar compras y ventas.</p>
+                  <div class="work__actions">
+                     <a href="https://github.com/EliasG0nzales/inventario-producto" target="_blank" rel="noreferrer">
+                        <i class="ri-github-line"></i> Codigo
+                     </a>
+                     <span>Inventario</span>
+                  </div>
+               </article>
+
+               <article class="work__card">
+                  <a href="https://github.com/EliasG0nzales/MB7-Tarea1-Git-TuNombreCompleto" class="work__link" target="_blank" rel="noreferrer" aria-label="Abrir MB7 Tarea1 Git en GitHub">
+                     <img src="assets/img/MB7%20Tarea1%20Git.jpg" alt="MB7 Tarea1 Git Tu Nombre Completo" class="work__img">
+                     <i class="ri-arrow-right-up-line"></i>
+                  </a>
+                  <span class="work__number">21</span>
+                  <h3 class="work__name">MB7 Tarea1 Git</h3>
+                  <p class="work__description">Practica academica de Git y GitHub para control de versiones y repositorios.</p>
+                  <div class="work__actions">
+                     <a href="https://github.com/EliasG0nzales/MB7-Tarea1-Git-TuNombreCompleto" target="_blank" rel="noreferrer">
+                        <i class="ri-github-line"></i> Codigo
+                     </a>
+                     <span>Git</span>
+                  </div>
+               </article>
+            </div>
          </section>
 
-         <!--==================== SERVICES SECTION ====================-->
          <section class="services section" id="service">
-            
+            <h2 class="section__title"><span>Mis</span> Servicios</h2>
+
+            <div class="services__container container grid">
+               <article class="services__card services-open">
+                  <button class="services__button" type="button">
+                     <span>Analisis de Datos</span>
+                     <i class="ri-add-line"></i>
+                  </button>
+                  <div class="services__content">
+                     <p class="services__description">Exploracion, limpieza y visualizacion de datos con Power BI y Python basico. Enfocado en reportes claros y toma de decisiones.</p>
+                     <ul class="services__list">
+                        <li>Power BI</li>
+                        <li>Python basico</li>
+                        <li>Reportes</li>
+                     </ul>
+                  </div>
+               </article>
+
+               <article class="services__card">
+                  <button class="services__button" type="button">
+                     <span>Desarrollo Frontend</span>
+                     <i class="ri-add-line"></i>
+                  </button>
+                  <div class="services__content">
+                     <p class="services__description">Creacion de paginas web modernas y responsivas usando HTML, CSS y React.</p>
+                     <ul class="services__list">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>React</li>
+                     </ul>
+                  </div>
+               </article>
+
+               <article class="services__card">
+                  <button class="services__button" type="button">
+                     <span>Diseno UI/UX con Figma</span>
+                     <i class="ri-add-line"></i>
+                  </button>
+                  <div class="services__content">
+                     <p class="services__description">Prototipado y diseno de interfaces centradas en el usuario, con enfoque visual y funcional.</p>
+                     <ul class="services__list">
+                        <li>Figma</li>
+                        <li>Prototipos</li>
+                        <li>UI/UX</li>
+                     </ul>
+                  </div>
+               </article>
+
+               <article class="services__card">
+                  <button class="services__button" type="button">
+                     <span>Gestion de Bases de Datos</span>
+                     <i class="ri-add-line"></i>
+                  </button>
+                  <div class="services__content">
+                     <p class="services__description">Diseno y administracion de bases de datos relacionales con MySQL Workbench.</p>
+                     <ul class="services__list">
+                        <li>MySQL</li>
+                        <li>Workbench</li>
+                        <li>Modelo relacional</li>
+                     </ul>
+                  </div>
+               </article>
+            </div>
          </section>
 
-         <!--==================== SKILLS SECTION ====================-->
          <section class="skills section" id="skills">
-            
+            <h2 class="section__title">Mis <span>Habilidades</span></h2>
+            <p class="skills__description container">Herramientas y conocimientos que uso para construir soluciones digitales con datos, diseno e interfaces web.</p>
+
+            <div class="skills__container container grid">
+               <article class="skills__card">
+                  <h3 class="skills__title"><i class="ri-layout-4-line"></i> Frontend</h3>
+                  <div class="skills__items">
+                     <span><img src="assets/img/skills-frontend-1.svg" alt=""> HTML</span>
+                     <span><img src="assets/img/skills-frontend-2.svg" alt=""> CSS</span>
+                     <span><img src="assets/img/skills-frontend-4.svg" alt=""> React</span>
+                     <span><img src="assets/img/skills-design-1.svg" alt=""> Figma</span>
+                  </div>
+               </article>
+
+               <article class="skills__card">
+                  <h3 class="skills__title"><i class="ri-bar-chart-box-line"></i> Datos & BI</h3>
+                  <div class="skills__items">
+                     <span><i class="ri-bar-chart-2-line"></i> Power BI</span>
+                     <span><i class="ri-apps-2-line"></i> Power Apps</span>
+                     <span><img src="assets/img/skills-backend-2.svg" alt=""> MySQL Workbench</span>
+                     <span><i class="ri-cloud-line"></i> AWS</span>
+                  </div>
+               </article>
+
+               <article class="skills__card">
+                  <h3 class="skills__title"><i class="ri-brain-line"></i> Otros</h3>
+                  <div class="skills__items">
+                     <span><i class="ri-flow-chart"></i> Logica computacional</span>
+                     <span><img src="assets/img/skills-backend-1.svg" alt=""> Python basico</span>
+                     <span><i class="ri-team-line"></i> Trabajo en equipo</span>
+                     <span><i class="ri-calendar-check-line"></i> Organizacion</span>
+                  </div>
+               </article>
+            </div>
          </section>
 
-         <!--==================== TESTIMONIALS SECTION ====================-->
          <section class="testimonials section">
-            
+            <h2 class="section__title"><span>Referencias</span> Profesionales</h2>
+
+            <div class="testimonials__container container grid">
+               <article class="testimonials__card">
+                  <span class="testimonials__number">5.0</span>
+                  <p class="testimonials__description">Elias es disciplinado, puntual y siempre comprometido con la calidad de su trabajo.</p>
+                  <div class="testimonials__profile">
+                     <img src="assets/img/testimonial-1.png" alt="Ing. Hugo Dolorier">
+                     <div>
+                        <h3 class="testimonials__name">Ing. Hugo Dolorier</h3>
+                        <p class="testimonials__role">Supervisor de Seguimiento</p>
+                     </div>
+                  </div>
+               </article>
+
+               <article class="testimonials__card">
+                  <span class="testimonials__number">5.0</span>
+                  <p class="testimonials__description">Demuestra gran capacidad de aprendizaje y responsabilidad en cada tarea asignada.</p>
+                  <div class="testimonials__profile">
+                     <img src="assets/img/testimonial-2.png" alt="Ing. Carlos Pomacata">
+                     <div>
+                        <h3 class="testimonials__name">Ing. Carlos Pomacata</h3>
+                        <p class="testimonials__role">Supervisor de Seguimiento</p>
+                     </div>
+                  </div>
+               </article>
+            </div>
          </section>
 
-         <!--==================== CONTACT SECTION ====================-->
          <section class="contact section" id="contact">
-            
+            <h2 class="section__title">Contacta <span>Conmigo</span></h2>
+
+            <div class="contact__container container grid">
+               <form action="" class="contact__form" id="contact-form">
+                  <label class="contact__label" for="contact-name">Nombre</label>
+                  <input type="text" name="user_name" id="contact-name" class="contact__input" required>
+
+                  <label class="contact__label" for="contact-email">Email</label>
+                  <input type="email" name="user_email" id="contact-email" class="contact__input" required>
+
+                  <label class="contact__label" for="contact-message">Mensaje</label>
+                  <textarea name="user_message" id="contact-message" class="contact__input contact__area" required></textarea>
+
+                  <button type="submit" class="button contact__button">
+                     Enviar mensaje <i class="ri-arrow-right-up-line"></i>
+                  </button>
+                  <p class="contact__message" id="contact-message-status"></p>
+               </form>
+
+               <div class="contact__info">
+                  <a href="mailto:gonzalesjenhua@gmail.com" class="contact__card">
+                     <i class="ri-mail-line"></i>
+                     <span>
+                        <strong>Email</strong>
+                        gonzalesjenhua@gmail.com
+                     </span>
+                  </a>
+
+                  <a href="tel:+51925891444" class="contact__card">
+                     <i class="ri-phone-line"></i>
+                     <span>
+                        <strong>Telefono</strong>
+                        +51 925 891 444
+                     </span>
+                  </a>
+
+                  <a href="https://www.google.com/maps/search/San+Juan+de+Lurigancho,+Lima,+Peru" class="contact__card" target="_blank" rel="noreferrer">
+                     <i class="ri-map-pin-line"></i>
+                     <span>
+                        <strong>Ubicacion</strong>
+                        Lima, Peru - San Juan de Lurigancho
+                     </span>
+                  </a>
+               </div>
+            </div>
          </section>
       </main>
 
-      <!--==================== FOOTER ====================-->
       <footer class="footer">
-         
+         <div class="footer__container container grid">
+
+            <ul class="footer__links">
+               <li><a href="#work">Trabajo</a></li>
+               <li><a href="#service">Servicios</a></li>
+               <li><a href="#skills">Habilidades</a></li>
+               <li><a href="#contact">Contacto</a></li>
+            </ul>
+
+            <div class="footer__social">
+               <a href="mailto:gonzalesjenhua@gmail.com" aria-label="Email"><i class="ri-mail-line"></i></a>
+               <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer" aria-label="LinkedIn"><i class="ri-linkedin-box-line"></i></a>
+               <a href="https://github.com/EliasG0nzales" target="_blank" rel="noreferrer" aria-label="GitHub"><i class="ri-github-line"></i></a>
+            </div>
+
+            <span class="footer__copy">&#169; Elias Gonzales Jenhua. Todos los derechos reservados.</span>
+         </div>
       </footer>
 
-      <!--========== SCROLL UP ==========-->
-      
+      <a href="#home" class="scrollup" id="scroll-up" aria-label="Subir">
+         <i class="ri-arrow-up-line"></i>
+      </a>
 
-      <!--=============== SCROLLREVEAL - Insert link for animations ===============-->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.min.js"></script>
-      
-      <!--=============== TYPED JS - Insert link for text animations ===============-->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.min.js"></script>
-      
-      <!--=============== SWIPER JS - Insert link for swiperjs ===============-->
       <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
-
-      <!--=============== EMAIL JS - Insert link to send emails ===============-->
       <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-
-      <!--=============== MAIN JS ===============-->
       <script src="assets/js/main.js"></script>
    </body>
 </html>
